@@ -1,0 +1,2 @@
+stocks API https://www.alphavantage.co/
+news API https://newsapi.org/
