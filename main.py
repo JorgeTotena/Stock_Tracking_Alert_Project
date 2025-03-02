@@ -65,6 +65,8 @@ if p_diff >= 3 or p_diff <= -3:
     r2.raise_for_status()
     data = r2.json()
     top3 = [(article["title"], article["description"]) for article in data["articles"][0:3]]
+    #top3_2 = [f"Headline: {article['title']}. \nBrief: {article['description']}" for article in data["articles"][0:3]] #another way to solve this part
+    #print(top3_2)
     #print(top3)
     #print(top3[0][0])
     if p_diff >= 3:
